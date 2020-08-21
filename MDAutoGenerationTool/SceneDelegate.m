@@ -7,6 +7,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "MD_AutoGeneration.h"
 
 @interface SceneDelegate ()
 
@@ -19,6 +20,15 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    /*
+    [MD_AutoGeneration md_autoGenerationWithTitle:@"Initialize" subtitle1:nil content1:@"This command is used to initialize PAX terminal. PAX terminal will do internal test/check and initialize the terminal for transactions. Especially for terminal without touch screen, if terminal doesn’t receive this command after install, the idle menu will display message like “Disconnected”, when terminal receives this command, the idle menu will display the configurable parameter “idleMsg”."];
+    */
+    NSMutableDictionary *mutabDic = [NSMutableDictionary dictionary];
+    [mutabDic setObject:@"Initialize" forKey:K_TITLE];
+    [mutabDic setObject:@"This command is used to initialize PAX terminal. PAX terminal will do internal test/check and initialize the terminal for transactions. Especially for terminal without touch screen, if terminal doesn’t receive this command after install, the idle menu will display message like “Disconnected”, when terminal receives this command, the idle menu will display the configurable parameter “idleMsg”." forKey:K_CONT_1];
+    [MD_AutoGeneration md_autoGenerationWithDictionary:mutabDic];
+    
 }
 
 

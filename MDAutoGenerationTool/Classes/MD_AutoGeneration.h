@@ -8,14 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
+#define K_TITLE @"title"
+#define K_SUB_1 @"subTitle1"
+#define K_CONT_1 @"content1"
+#define K_SUB_2 @"subTitle2"
+#define K_CONT_2 @"content2"
+
+
+
+
 
 @interface MD_AutoGeneration : NSObject
 
-+ (void)autoGenerationWithTitle:(NSString *)title
-                      subtitle1:(NSString *)subtitle1
-                       content1:(NSString *)content1;
++ (void)md_autoGenerationWithDictionary:(NSDictionary *)dictionary;
 
 @end
 
-NS_ASSUME_NONNULL_END
