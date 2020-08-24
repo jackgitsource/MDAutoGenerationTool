@@ -14,10 +14,7 @@
 #define K_CONT_1 @"content1"
 #define K_SUB_2 @"subTitle2"
 #define K_CONT_2 @"content2"
-
-
-
-
+#define k_FORM_LIST @"form_list"
 
 @interface MD_AutoGeneration : NSObject
 
