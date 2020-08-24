@@ -1,0 +1,2 @@
+# MDAutoGenerationTool
+通过代码生成自定义格式的markdown文件
